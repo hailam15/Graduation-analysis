@@ -7,8 +7,9 @@ datas = file.read().split("\n")
 # write header to csv
 with open("clean_data.csv", encoding="utf8", mode="w", newline='') as file_csv:
 	header = ["sbd", "tên", "dd", "mm", "yy", "toán", "ngữ văn", "khxh", "khtn", "lịch sử", "địa lí", "gdcd", "sinh học", "vật lí", "hóa học", "tiếng anh"]
+	e_header = ["v_number", "name", "dd", "mm", "yy", "math", "literature", "social science", "science", "history", "geography", "philosophy", "biology", "physics", "chemistry", "english"]
 	writer = csv.writer(file_csv)
-	writer.writerow(header)
+	writer.writerow(e_header)
 
 sbd = 2000000
 
